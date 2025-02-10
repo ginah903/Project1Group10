@@ -24,7 +24,7 @@ public class Book {
 	}
 	
 	/**
-	 * Constructor to initialize title, author, ISBN, 
+	 * Parameterized onstructor to initialize title, author, ISBN, 
 	 * and price to provided values. 
 	 * @param title The title of the book.
 	 * @param author The author of the book.
@@ -36,6 +36,20 @@ public class Book {
 		this.author = author;
 		this.ISBN = ISBN;
 		this.price = price;
+	}
+	
+	/**
+	 * Copy constructor that creates a new Book object from another
+	 * book.
+	 * @param other The Book object to copy values from.
+	 */
+	public Book(Book other) {
+		if (other != null) {
+			this.title = other.title;
+			this.author = other.author;
+			this.ISBN = other.ISBN;
+			this.price = other.price;
+		}
 	}
 	
 	/**
