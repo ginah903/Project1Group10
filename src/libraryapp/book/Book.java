@@ -24,7 +24,7 @@ public class Book {
 	}
 	
 	/**
-	 * Parameterized onstructor to initialize title, author, ISBN, 
+	 * Parameterized constructor to initialize title, author, ISBN, 
 	 * and price to provided values. 
 	 * @param title The title of the book.
 	 * @param author The author of the book.
@@ -124,6 +124,21 @@ public class Book {
 	public String toString() {
 		return "Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", price=" + price + "]";
 	}
+	
+	/**
+	 * Returns true if two books have the same ISBN.
+	 * 
+	 */ 
+	@Override
+	public boolean equals(Object other) {
+		Book book = (Book)other;
+		if (this.ISBN.equals(book.ISBN)) {
+			return true;
+		}
+		return false;
+	}
+	
+	
 	
 
 }
