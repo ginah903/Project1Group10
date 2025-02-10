@@ -16,7 +16,7 @@ public class Library {
 	 * 
 	 * @param book The book to be added to the array
 	 */
-	public boolean addbook(Book book) {
+	public boolean addBook(Book book) {
 		if(count < books.length) {
 			books[count] = book;
 			count++;
