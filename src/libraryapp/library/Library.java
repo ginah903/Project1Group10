@@ -1,4 +1,4 @@
-package libraryapp.Library;
+package libraryapp.library;
 import libraryapp.book.Book;
 
 public class Library {

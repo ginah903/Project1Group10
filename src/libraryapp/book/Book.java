@@ -7,7 +7,6 @@ public class Book {
 	private String ISBN;
 	private double price;
 	
-	
 	/**
 	 * Default constructor to initialize title, author, 
 	 * and ISBN to "Unknown" and price to 0.0.
