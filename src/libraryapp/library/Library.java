@@ -25,6 +25,31 @@ public class Library {
 		
 		return false;
 	}
+	
+	
+	/**
+	 * Removes a specific book from the array by checking
+	 * the ISBN
+	 * 
+	 * shifts all of the books down by one and makes the
+	 * top book null so there are no duplicates
+	 * 
+	 * @param book The book to remove from the array
+	 */
+	public boolean removeBook(Book book) {
+		for(int i = 0; i < count; i++) {
+			if(books[i].equals(book)) {
+				for(int j = i; j < count - 1; j++) {
+					books[j] = books[j + 1];
+				}
+				books[count - 1] = null;
+				count--;
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }
 
 /* hey mamas 
