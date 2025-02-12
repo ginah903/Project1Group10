@@ -10,10 +10,6 @@ public class Book {
 	/**
 	 * Default constructor to initialize title, author, 
 	 * and ISBN to "Unknown" and price to 0.0.
-	 * @param title The title of the book.
-	 * @param author The author of the book.
-	 * @param ISBN The ISBN of the book.
-	 * @param price The price of the book.
 	 */
 	public Book() {
 		this.title = "Unknown";
