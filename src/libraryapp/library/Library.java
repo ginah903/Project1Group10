@@ -50,6 +50,24 @@ public class Library {
 
 		return false;
 	}
+	
+	
+	/**
+	 * Searches for a book by its ISBN.
+	 * 
+	 * @param ISBN The ISBN of the book to search for.
+	 * @return The Book object if found, otherwise null.
+	 */
+	public Book searchByISBN(String ISBN) {
+		for (int i = 0; i < count; i++) {
+			if (books[i] != null && books[i].getISBN().equals(ISBN)) {
+				return books[i]; 
+			}
+		}
+		return null;
+	}
+}
+
 }
 
 
