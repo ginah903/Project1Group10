@@ -15,12 +15,13 @@ public class Library {
 	 * Method that adds a book to the Book array
 	 * 
 	 * @param book The book to be added to the array
+	 * @return Returns true if the book was added successfully, false if not added.
 	 */
 	public boolean addBook(Book book) {
 		if(count < books.length) {
 			books[count] = book;
 			count++;
-			return true
+			return true;
 		}
 		
 		return false;
