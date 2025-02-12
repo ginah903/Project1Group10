@@ -17,18 +17,25 @@ public class Main {
 			System.out.println("failed to add book to the library");
 		}
 		
-		if(myLibrary.addBook(new Book("Calvin and Hobbes", "Bill Watterson", "352-2939074779", 24.99)) {
+		if(myLibrary.addBook(new Book("Calvin and Hobbes", "Bill Watterson", "352-2939074779", 39.99)) {
 			System.out.println("book successfully added!");
 		}
 		else {
 			System.out.println"failed to add book to the library");
 		}
 		
-		if(myLibrary.addBook(new Book("Don't Let the Pidgeon Drive the Bus!", "Mo Willems", "688-3028678399", 24.99))) {
+		if(myLibrary.addBook(new Book("Don't Let the Pidgeon Drive the Bus!", "Mo Willems", "688-3028678399", 9.99))) {
 			System.out.println("book successfully added!");
 		}
 		else {
 			System.out.println("failed to add book to the library");
+		}
+		
+		if(myLibrary.removeBook(new Book("placeHolder", "placeHolder Author", "352-2939074779", 0))) {
+			System.out.println("removing book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
+		}
+		else {
+			System.out.println("Cannot remove book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
 		}
 	}
 }
