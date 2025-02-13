@@ -36,5 +36,12 @@ public class Main {
 		else {
 			System.out.println("Cannot remove book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
 		}
+		
+		if (myLibrary.removeBook(new Book("placeHolder", "placeHolder Author", "352-2939074779", 0))) {
+			System.out.println("removing book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
+		}
+		else {
+			System.out.println("Cannot remove book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
+		}
 	}
 }
