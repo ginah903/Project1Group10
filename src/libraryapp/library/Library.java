@@ -80,7 +80,7 @@ public class Library {
 		System.out.println("Current Library Books:");
 		for (int i = 0; i < count; i++) {
 			if (books[i] != null) {
-				System.out.println(books[i].toString());
+				System.out.println(i + ". " + books[i].toString());
 			}
 		}
 	}
