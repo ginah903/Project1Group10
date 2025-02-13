@@ -43,5 +43,13 @@ public class Main {
 		else {
 			System.out.println("Cannot remove book: Calvin and Hobbes by Bill Watterson (ISBN: 352-2939074779, 39.99)");
 		}
+		
+		//searching for book by ISBN test
+		if (myLibrary.searchByISBN("938-0256278379") {
+			System.out.println("Book found: Beloved by Toni Morrison (ISBN: 938-0256278379, $24.99");
+		}
+		else {
+			System.out.println("Could not find book with ISBN: 938-0256278379");
+		}
 	}
 }

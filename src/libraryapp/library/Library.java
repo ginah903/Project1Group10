@@ -59,6 +59,7 @@ public class Library {
 	 * @return The Book object if found, otherwise null.
 	 */
 	public Book searchByISBN(String ISBN) {
+		System.out.println("Searching for book with ISBN: " + ISBN);
 		for (int i = 0; i < count; i++) {
 			if (books[i] != null && books[i].getISBN().equals(ISBN)) {
 				return books[i]; 
