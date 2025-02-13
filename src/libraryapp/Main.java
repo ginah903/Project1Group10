@@ -56,4 +56,5 @@ public class Main {
 		
 		//displaying current library test
 		myLibrary.displayBooks();
+	}
 }
