@@ -66,8 +66,6 @@ public class Library {
 		}
 		return null;
 	}
-
-	
 	
 	/**
 	 * Displays the details of all books in the library.

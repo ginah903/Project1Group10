@@ -54,4 +54,7 @@ public class Main {
 			System.out.println("Could not find book with ISBN: 938-0256278379");
 		}
 		
+		//displaying current library test
+		myLibrary.displayBooks();
+		
 }
