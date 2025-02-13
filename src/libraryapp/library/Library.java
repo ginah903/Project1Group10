@@ -66,7 +66,26 @@ public class Library {
 		}
 		return null;
 	}
-}
+
+	
+	
+	/**
+	 * Displays the details of all books in the library.
+	 * Uses the toString() method of the Book class.
+	 */
+	public void displayBooks() {
+		if (count == 0) {
+			System.out.println("The library has no books.");
+			return;
+		}
+
+		System.out.println("Current Library Books:");
+		for (int i = 0; i < count; i++) {
+			if (books[i] != null) {
+				System.out.println(books[i].toString());
+			}
+		}
+	}
 
 }
 
